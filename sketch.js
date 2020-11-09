@@ -55,7 +55,7 @@ function draw() {
   crumbledpaper.y=crumbledbody.position.y;
 
   if(keyDown("up")){
-	  Matter.Body.applyForce(crumblebody.body,crumblebody.body.position,{x:85,y:-85});
+	  Matter.Body.applyForce(crumblebody.body,crumblebody.body.position,{x:1150,y:100});
   }
   
 }
