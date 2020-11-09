@@ -55,18 +55,9 @@ function draw() {
   crumbledpaper.y=crumbledbody.position.y;
 
   if(keyDown("up")){
-	  crumbledbody.position.y=crumbledbody.position.y-1;
+	  Matter.Body.applyForce(crumblebody.body,crumblebody.body.position,{x:85,y:-85});
   }
-  if(keyDown("down")){
-	crumbledbody.position.y=crumbledbody.position.y+1;
-  }
-  if(keyDown("right")){
-	  crumbledbody.position.x=crumbledbody.position.x+1;
-  }
-  if(keyDown("left")){
-	crumbledbody.position.x=crumbledbody.position.x-1;
-  }
-
+  
 }
 
 
